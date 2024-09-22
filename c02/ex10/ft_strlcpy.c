@@ -1,41 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucius <lucius@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 20:50:36 by lucius            #+#    #+#             */
-/*   Updated: 2024/09/19 21:17:04 by lucius           ###   ########.fr       */
+/*   Created: 2024/09/22 17:13:36 by lucius            #+#    #+#             */
+/*   Updated: 2024/09/22 21:06:56 by lucius           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strcpy(char *dest, char *src)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	int	i;
+	unsigned int	src_len;
+	unsigned int	i;
 
 	i = -1;
 	while (src[++i])
-		dest[i] = src[i];
-	dest[i] = '\0';
-	return (dest);
+		src_len++;
+	if (size > 0)
+	{
+		i = 0;
+		while ((i < size - 1) && src[i])
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
+	}
+	return (src_len);
 }
 
 /*int main(void)
 {
-	char *src = "Salut les amis";
-	char dest[15];
-	char *srcTest = "Salut les amis";
-	char destTest[15];
+	char dest[20];
+	char str[14] = "Salut les amis";
+	char dest1[20];
+	char str1[14] = "Salut les amis";
 
-	ft_strcpy(dest, src);
-	strcpy(destTest, srcTest);
+	printf("%d\n", ft_strlcpy(dest, str, 14));
+	printf("%s\n", dest);
 
-	printf("ft_strcpy : %s\n", dest);
-	printf("strcpy : %s\n", destTest);
+	printf("%ld\n", strlcpy(dest1, str1, 14));
+	printf("%s\n", dest1);
 
 	return (0);
 }*/

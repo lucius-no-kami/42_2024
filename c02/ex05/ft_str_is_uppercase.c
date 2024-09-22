@@ -28,7 +28,8 @@ int	ft_str_is_uppercase(char *str)
 	printf("%d\n", ft_str_is_uppercase("AUWUIQUEQIWUEQIWEUQIEUQEI"));
 	printf("%d\n", ft_str_is_uppercase("AUWUIQUE QIWUEQIWE UQIEUQEI"));
 	printf("%d\n", ft_str_is_uppercase("AUWUIQUEQwewrewerIWUEQIWEUQIEUQEI"));
-	printf("%d\n", ft_str_is_uppercase("AUWUIQUEQIWUE234234234234QIWEUQIEUQEI"));
+	printf("%d\n",
+		ft_str_is_uppercase("AUWUIQUEQIWUE234234234234QIWEUQIEUQEI"));
 	printf("%d\n", ft_str_is_uppercase(""));
 
 	return (0);
