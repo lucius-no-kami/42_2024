@@ -28,7 +28,7 @@ char	*ft_strupcase(char *str)
 	char tab[] = "qweqweqwe";
 	char tab2[] = "salut les amis";
 	char tab3[] = "salutlesamisJEVAISBIEN";
-
+	
 	printf("%s\n", ft_strupcase(tab));
 	printf("%s\n", ft_strupcase(tab2));
 	printf("%s\n", ft_strupcase(tab3));

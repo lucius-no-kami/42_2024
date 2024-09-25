@@ -6,7 +6,7 @@
 /*   By: luluzuri <luluzuri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 13:13:49 by luluzuri          #+#    #+#             */
-/*   Updated: 2024/09/22 11:39:10 by luluzuri         ###   ########.fr       */
+/*   Updated: 2024/09/24 08:07:58 by luluzuri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_strstr(char *str, char *to_find)
 
 /*int main(void)
 {
-	char *to_find = "lucas";
+	char *to_find = "";
 	char *src = "je suis lucas, etudiant 42";
 
 	printf("%s\n", strstr(src, to_find));

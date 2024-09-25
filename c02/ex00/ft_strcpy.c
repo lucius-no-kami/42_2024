@@ -36,6 +36,6 @@ char	*ft_strcpy(char *dest, char *src)
 
 	printf("ft_strcpy : %s\n", dest);
 	printf("strcpy : %s\n", destTest);
-
-	return (0);
+	
+	return 0;
 }*/

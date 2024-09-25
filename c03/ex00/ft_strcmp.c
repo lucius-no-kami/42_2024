@@ -6,7 +6,7 @@
 /*   By: luluzuri <luluzuri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 21:20:05 by lucius            #+#    #+#             */
-/*   Updated: 2024/09/20 09:19:10 by luluzuri         ###   ########.fr       */
+/*   Updated: 2024/09/24 08:08:15 by luluzuri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_strcmp(char *s1, char *s2)
 {
 	char *str = "salut les amis";
 	char *str1 = "salut les amis ";
-	char *str2 = "salut lEs amis";
+	char *str2 = "salut ls amis";
 	
 
 	printf("%d\n", strcmp(str, str1));

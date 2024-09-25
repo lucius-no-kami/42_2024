@@ -28,7 +28,7 @@ char	*ft_strlowcase(char *str)
 	char tab[] = "qweqweqwe";
 	char tab2[] = "salut les amis";
 	char tab3[] = "salutlesamisJEVAISBIEN";
-
+	
 	printf("%s\n", ft_strlowcase(tab));
 	printf("%s\n", ft_strlowcase(tab2));
 	printf("%s\n", ft_strlowcase(tab3));
