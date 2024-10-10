@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luluzuri <luluzuri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/22 11:41:32 by luluzuri          #+#    #+#             */
-/*   Updated: 2024/09/22 11:47:19 by luluzuri         ###   ########.fr       */
+/*   Created: 2024/09/24 13:21:43 by luluzuri          #+#    #+#             */
+/*   Updated: 2024/09/25 13:28:03 by luluzuri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <bsd/string.h>
 #include <stdio.h>
 
-int main(void)
+int	ft_recursive_factorial(int nb)
 {
-	char a[50] = "salut";
-	char *b = "test";
+	if (nb < 0)
+		return (0);
+	if (nb == 1 || nb == 0)
+		return (1);
+	return (nb * ft_recursive_factorial(nb - 1));
+}
 
-	printf("%zu\n", strlcat(a, b, 5));
-	printf("%s\n", a);
-	printf("%s\n", b);
+/*int main(void)
+{
+	printf("%d\n", ft_recursive_factorial(5));
 
 	return (0);
-}
+}*/
